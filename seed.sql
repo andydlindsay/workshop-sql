@@ -12,7 +12,7 @@ CREATE TABLE books (
   author_id INTEGER,
   FOREIGN KEY (author_id) REFERENCES authors(id),
   title VARCHAR(50),
-  num_pages INTEGER,
+  num_pages FLOAT,
   publication_date DATE
 );
 
@@ -41,7 +41,7 @@ VALUES
   (2, 'The Andromeda Strain', 327, '1969-09-01'),
   (2, 'Prey', 507, '2002-11-25'),
   (2, 'Airframe', 431, '1996-11-27'),
-  (2, 'Congo', 442, '1980-01-01'),
+  (2, 'Congo', 442, '1980-01-15'),
   (2, 'Disclosure', 455, '1994-01-01'),
   (3, 'Twilight Tenth Anniversary', 299, '2016-07-01'),
   (3, 'Twilight', 501, '2006-09-06'),
