@@ -83,7 +83,7 @@ FROM books;
 10. Create a `full_name` field from the author's first name and last name.
 
 ```sql
-SELECT first_name + ' ' + last_name AS full_name
+SELECT first_name || ' ' || last_name AS full_name
 FROM authors;
 
 -- or using CONCAT
